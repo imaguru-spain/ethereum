@@ -49,5 +49,4 @@ In Metamask use "connect to RPC" and use http://localhost:7545 as address
 ```
 truffle migrate --reset
 truffle test
-
 ```
