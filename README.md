@@ -29,3 +29,13 @@ app.candidates(2)
 touch test/election.js
 truffle test
 ```
+
+### Client-Side Application
+
+- Replace src/index.html
+- Replace src/js/app.js
+
+```
+truffle migrate --reset
+npm run dev
+```
