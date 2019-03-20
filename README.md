@@ -26,5 +26,6 @@ app.candidates(2)
 ### Testing
 
 ```
-
+touch test/election.js
+truffle test
 ```
