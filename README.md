@@ -39,3 +39,15 @@ truffle test
 truffle migrate --reset
 npm run dev
 ```
+
+In Metamask use "connect to RPC" and use http://localhost:7545 as address
+
+##Cast Votes
+
+- Change Election.sol
+
+```
+truffle migrate --reset
+truffle test
+
+```
