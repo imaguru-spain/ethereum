@@ -15,6 +15,10 @@ contract Election {
     // Store accounts that have voted
     mapping(address => bool) public voters;
 
+    event votedEvent (
+        uint indexed _candidateId
+    );
+
     function vote(uint _candidateId) public {
         // require that they haven't voted before
         require(!voters[msg.sender]);
@@ -27,6 +31,8 @@ contract Election {
 
         // update candidate vote Count
         candidates[_candidateId].voteCount ++;
+        // trigger voted event
+        emit votedEvent(_candidateId);
     }
 
     // Constructor
