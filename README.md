@@ -26,5 +26,46 @@ app.candidates(2)
 ### Testing
 
 ```
+touch test/election.js
+truffle test
+```
 
+### Client-Side Application
+
+- Replace src/index.html
+- Replace src/js/app.js
+
+```
+truffle migrate --reset
+npm run dev
+```
+
+In Metamask use "connect to RPC" and use http://localhost:7545 as address
+
+## 3. Cast Votes
+
+- Change Election.sol
+
+```
+truffle migrate --reset
+truffle test
+```
+
+### Client-side voting
+
+- Change src/index.html
+
+```
+npm run dev
+```
+
+- Click on vote
+
+## 4. Watch Events
+
+- Change Election.sol
+
+```
+truffle migrate --reset
+truffle test
 ```
