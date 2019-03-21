@@ -1,5 +1,7 @@
-var Election = artifacts.require("./Election.sol");
+/* eslint-disable no-undef */
+/* eslint-disable func-names */
+const Election = artifacts.require('./Election.sol');
 
-module.exports = function(deployer) {
+module.exports = function (deployer) {
   deployer.deploy(Election);
 };

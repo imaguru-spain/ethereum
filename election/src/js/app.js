@@ -2,14 +2,12 @@ App = {
   web3Provider: null,
   contracts: {},
   account: "0x0",
-  hasVoted: false,
 
-  init: function() {
+  init() {
     return App.initWeb3();
   },
 
-  initWeb3: function() {
-    // TODO: refactor conditional
+  initWeb3() {
     if (typeof web3 !== "undefined") {
       // If a web3 instance is already provided by Meta Mask.
       App.web3Provider = web3.currentProvider;
@@ -36,7 +34,6 @@ App = {
       return App.render();
     });
   },
-
   render: function() {
     var electionInstance;
     var loader = $("#loader");
@@ -103,7 +100,6 @@ App = {
         console.warn(error);
       });
   },
-
   castVote: function() {
     var candidateId = $("#candidatesSelect").val();
     App.contracts.Election.deployed()
@@ -138,8 +134,8 @@ App = {
   }
 };
 
-$(function() {
-  $(window).load(function() {
+$(() => {
+  $(window).load(() => {
     App.init();
   });
 });
