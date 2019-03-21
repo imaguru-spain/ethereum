@@ -2,7 +2,7 @@
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.quickSuggestionsDelay": 500,
   "editor.letterSpacing": 0.5,
-  "editor.fontSize": 16,
+  "editor.fontSize": 20,
   "workbench.editor.tabSizing": "shrink",
   "html.format.enable": true,
   "html.format.preserveNewLines": true,
