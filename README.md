@@ -69,5 +69,3 @@ npm run dev
 truffle migrate --reset
 truffle test
 ```
-
-New
